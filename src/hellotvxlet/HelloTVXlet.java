@@ -16,10 +16,11 @@ public class HelloTVXlet implements Xlet, ResourceClient, UserEventListener, HAc
     private XletContext actueleXletContext;
     public ImageComponent mc, fc, tt; 
     private HTextButton startButton;    
+    private Timer timer;
     public int index = 0;
     public int question = 0;
     public boolean start = false;
-
+    BackgroundTimerTask objMijnTimerTask; 
         
     public void notifyRelease(ResourceProxy proxy) {}
     public void release(ResourceProxy proxy) {}
@@ -35,6 +36,7 @@ public class HelloTVXlet implements Xlet, ResourceClient, UserEventListener, HAc
         sceneTemplate.setPreference(HSceneTemplate.SCENE_SCREEN_LOCATION, new HScreenPoint(0.0f, 0.0f), HSceneTemplate.REQUIRED);
                         
         mc = new ImageComponent("background.png", 0,0);
+        fc = new ImageComponent("number-field.png", 0,0);
         tt = new ImageComponent("title.png", 245,160);        
         
         startButton = new HTextButton("START DE QUIZ");
@@ -53,8 +55,11 @@ public class HelloTVXlet implements Xlet, ResourceClient, UserEventListener, HAc
         startButton.addHActionListener(this);
         startButton.requestFocus();
         
-    
-       
+        objMijnTimerTask = new BackgroundTimerTask();
+        objMijnTimerTask.setComponent(this.mc, scene);
+        
+        timer = new Timer();
+        
         scene.add(fc);
         scene.add(mc);
         scene.add(tt);
@@ -108,8 +113,8 @@ public class HelloTVXlet implements Xlet, ResourceClient, UserEventListener, HAc
                         QuizQuestion.RemoveQuestion(scene);
                         
                         if (question == 29){                            
-                            
-                            
+                            QuizScore.SetScore(scene, objMijnTimerTask.getTime());
+                            timer.cancel();
                         } else {   
                             question += 1;
                             index = 0;  
@@ -135,7 +140,7 @@ public class HelloTVXlet implements Xlet, ResourceClient, UserEventListener, HAc
            startButton.removeHActionListener(this);
            scene.remove(startButton);
            scene.remove(tt);
-          
+           timer.scheduleAtFixedRate(objMijnTimerTask, 0, 10); 
            
            QuizQuestion.Show(scene, 0);
 
