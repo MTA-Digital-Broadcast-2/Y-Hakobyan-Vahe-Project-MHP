@@ -24,6 +24,14 @@ public class QuizQuestion {
         this.answer = answer; 
         this.Answers = Answers; 
     }  
+    
+    public void SetScore (int q_index, int choice) {        
+        QuizScore.RaiseTotal();
+        
+        if (choice == this.answer) {
+            QuizScore.RaiseScore();
+        } 
+    } 
 
     public static void RemoveQuestion (HScene scene) {        
         scene.remove(question);   

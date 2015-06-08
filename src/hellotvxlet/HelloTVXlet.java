@@ -104,7 +104,7 @@ public class HelloTVXlet implements Xlet, ResourceClient, UserEventListener, HAc
                     break;
                 case HRcEvent.VK_ENTER:  
                     if (start){
-                      
+                        QuestionCollection.getQuizQuestion(question).SetScore(question, index);
                         QuizQuestion.RemoveQuestion(scene);
                         
                         if (question == 29){                            
