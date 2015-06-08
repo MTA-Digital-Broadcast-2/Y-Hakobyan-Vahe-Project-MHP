@@ -1,14 +1,71 @@
 Signature-Version: 1.0
 Created-By: 1.6.0_16 (Sun Microsystems Inc.)
 BDJ-Signature-Version: 1.0
-SHA1-Digest-Manifest: WFSNWt9eNvXgMNCEpKfDf6Aqnzg=
+SHA1-Digest-Manifest: kGHNDiUOwsqIY8wVfkBA3gCr5mY=
 
-Name: hellotvxlet/HelloTVXlet.class
-SHA1-Digest: k3+sSqcNMlfrslaBGw0Hum9kbmo=
+Name: hellotvxlet/BackgroundTimerTask.class
+SHA1-Digest: MsOLuuuOlXqKaQ89sQ4lq6YPSlY=
 
 Name: hellotvxlet/HelloTVXlet$1.class
 SHA1-Digest: jL4rl+dtvgbj4VErj8qjkXfGCe4=
 
+Name: number-field_old.png
+SHA1-Digest: 9Rkp0VLuggWOeeb33P/4hzAI/kw=
+
+Name: hellotvxlet/MijnComponent.class
+SHA1-Digest: CNNq1CnhuKfeGvnU48DSZYcvvhU=
+
+Name: background_new.png
+SHA1-Digest: GTM9waz0tilL6LC213q8HhGNy+Q=
+
+Name: hellotvxlet/QuizScore.class
+SHA1-Digest: 2CmBAoJb8qTTZ8LlYYGh4PlKpWQ=
+
+Name: background_5.png
+SHA1-Digest: Ctuz7yK2g7+evEEzyYw4HGjZNVI=
+
+Name: hellotvxlet/ImageComponent.class
+SHA1-Digest: rx7Itdn9F6K4GShFvK1sRqFj8WM=
+
+Name: startscreen.png
+SHA1-Digest: B0VJMYgUxKAi5G7CBF+jsdBcoeg=
+
+Name: background.png
+SHA1-Digest: itsHboQXkQCs1RHLpDO3SbmXW7E=
+
+Name: hellotvxlet/HelloTVXlet.class
+SHA1-Digest: 3ZCsqp4n0MFyyPPga0z77nwq+lU=
+
+Name: background_old.png
+SHA1-Digest: V5gSnKaadc0tmqM+dfzy1mYDkzo=
+
+Name: goed.png
+SHA1-Digest: 1f0vDnr3P7ij+VSMI8rIN8DunbM=
+
+Name: hellotvxlet/QuestionCollection.class
+SHA1-Digest: lYdyfEh/LvJMLQ0goXa6dcKCzdQ=
+
 Name: hellotvxlet/bluray.HelloTVXlet.perm
 SHA1-Digest: 84ZO/rYCyy0JStmaLbg1GDVEFhQ=
+
+Name: title.png
+SHA1-Digest: XvG76kQyBCbNxqVJvFI7E6h2K9U=
+
+Name: zwak.png
+SHA1-Digest: x0F1eJgHpprQXh+cxgDXtjBESbs=
+
+Name: hellotvxlet/MijnPizza.class
+SHA1-Digest: HpcvZI+dLdPe99u+HGiq3kY/yZk=
+
+Name: Thumbs.db
+SHA1-Digest: oEokFrVeuGA15jHpR8ZtjTwc5kI=
+
+Name: hellotvxlet/QuizQuestion.class
+SHA1-Digest: gjvO/I4BmEWelJv7ag7uurcuzms=
+
+Name: knap.png
+SHA1-Digest: 9fGG7Kml5RndKZyB/uQ5JemoVS4=
+
+Name: number-field.png
+SHA1-Digest: CZFcOp9zforWLG3/6l8k3cmt3YQ=
 
